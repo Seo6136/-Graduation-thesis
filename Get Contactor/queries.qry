@@ -1,0 +1,17 @@
+/**
+ * New query file
+ */
+
+query getContactor {
+  description: "find Contacted people based on UUID"
+  statement:
+  	SELECT org.example.contactor.Contactor
+  		WHERE (ContactedUser CONTAINS _$ContactedUser)
+}
+
+query getInfectedUser {
+  description: "find infected user"
+  statement:
+  	SELECT org.example.contactor.User
+  		WHERE (Infected == true)
+}
