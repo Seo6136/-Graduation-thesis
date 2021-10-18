@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp"
+        android:textSize="15dp"
+        android:text="Settings"
+        android:textColor="@color/colorSetupText"/>
+
+    <Button
+        android:id="@+id/button_set_period"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_selector"
+        android:gravity="center|left"
+        android:paddingLeft="10dp"
+        android:textSize="18dp"
+        android:textColor="@color/colorSetupButton"
+        android:text="Set period"/>
+
+    <Button
+        android:id="@+id/button_save_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_selector"
+        android:gravity="center|left"
+        android:paddingLeft="10dp"
+        android:textSize="18dp"
+        android:textColor="@color/colorSetupButton"
+        android:text="Save Scan Result"/>
+
+    <Button
+        android:id="@+id/button_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_selector"
+        android:gravity="center|left"
+        android:paddingLeft="10dp"
+        android:textSize="18dp"
+        android:textColor="@color/colorSetupButton"
+        android:text="About"/>
+</LinearLayout>

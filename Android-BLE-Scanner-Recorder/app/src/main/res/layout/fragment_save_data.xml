@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGray">
+        <TextView
+            android:id="@+id/tvRecording"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:textSize="25dp"
+            android:textColor="@color/colorWhite"
+            android:text="Recording"/>
+
+        <Switch
+            android:id="@+id/switch_recording"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvRecording"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/switch_recording"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorWhite"
+            android:text="If you want to record the scanning results, swith on"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvExcelFileDirectory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:text="The excel file's extension is '.xls' and the file is placed inside "/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:text="File Name"/>
+
+    <EditText
+        android:id="@+id/editText_FileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write an excel file name (ex. data.xls)"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/tvAutoCloseTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorGreen"
+            android:text="Auto close timer"/>
+
+        <Switch
+            android:id="@+id/switch_AutoCloseTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvAutoCloseTimer"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_AutoClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/switch_AutoCloseTimer"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/editText_Hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textSize="30dp"
+                android:text="00"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text=":"/>
+
+            <EditText
+                android:id="@+id/editText_Minutes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textSize="30dp"
+                android:text="00"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text=":"/>
+
+            <EditText
+                android:id="@+id/editText_Seconds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textSize="30dp"
+                android:text="00"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/testText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout_AutoClose"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="When you return, it will be applied"/>
+    </RelativeLayout>
+</LinearLayout>
